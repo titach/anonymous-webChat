@@ -1,10 +1,13 @@
 # Pakjai — Anonymous WebChat
 
-Pakjai is an anonymous, one-to-one chat application developed as part of an **AI/ML/DS course**.
+an anonymous, one-to-one chat website.
+
+## About
+
+Developed as part of an **AI/ML/DS course**.
+Users can create a room around a topic they want to discuss or join an available room to listen and chat, without signing up or entering a room code.
 
 ## Features
-
-Users can create a room around a topic they want to discuss or join an available room to listen and chat, without signing up or entering a room code.
 
 The project integrates AI for Thai services to check bullying and analyze the sentiment of room titles and chat drafts.
 
