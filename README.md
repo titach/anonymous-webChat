@@ -1,6 +1,6 @@
 # Pakjai — Anonymous WebChat
 
-an anonymous, one-to-one chat website.
+An anonymous, one-to-one chat website built 99% with Codex AI.
 
 ## About
 
