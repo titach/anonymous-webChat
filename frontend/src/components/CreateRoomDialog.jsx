@@ -58,7 +58,7 @@ export default function CreateRoomDialog({
             <span>ใช้หัวข้อแทนข้อมูลส่วนตัว</span>
             <span>{title.length} / 80 ตัวอักษร</span>
           </div>
-          <ModerationStatus id="title-moderation" check={check} />
+          <ModerationStatus id="title-moderation" check={check} warnMessage="หัวข้อห้องสนทนาอาจเป็นไปในเชิงลบ แต่คุณยังสร้างห้องได้ตามปกติหากไม่พบการรังแก" />
           <p id="title-disclosure" className="moderation-disclosure">
             ชื่อห้องที่พิมพ์จะส่งให้ AI for Thai ตรวจการรังแกและอารมณ์ข้อความ
           </p>

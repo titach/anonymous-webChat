@@ -168,7 +168,7 @@ export default function Chat({ room, messages, clientId, send, request }) {
             <span className="char-count">{draft.length} / 1,000 ตัวอักษร</span>
           </form>
           <div className="chat-moderation">
-            <ModerationStatus id="message-moderation" check={check} />
+            <ModerationStatus id="message-moderation" check={check} warnMessage="ข้อความนี้อาจเป็นไปในเชิงลบ แต่คุณยังส่งข้อความได้ตามปกติหากไม่พบการรังแก" />
             {submitError && (
               <p role="alert" className="error-text">
                 {submitError}
