@@ -1,4 +1,4 @@
-export default function ModerationStatus({ check, id }) {
+export default function ModerationStatus({ check, id, warnMessage }) {
   return (
     <div id={id}>
       <div
@@ -16,10 +16,9 @@ export default function ModerationStatus({ check, id }) {
           </button>
         )}
       </div>
-      {check.sentiment?.negative && (
+      {check.status === "allowed" && check.sentiment?.negative && (
         <p className="sentiment-warning" role="status" aria-live="polite">
-          ข้อความนี้อาจเป็นไปในเชิงลบ คุณยังสร้างห้องหรือส่งข้อความได้ตามปกติ
-          หากไม่พบการรังแก
+          {warnMessage}
         </p>
       )}
       {check.sentiment?.status === "error" && (
